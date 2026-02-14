@@ -32,6 +32,10 @@ DISK_INFO=$(df -h / | awk 'NR==2 {print $3 "/" $2 " (" $5 ")"}')
 # --- WYŚWIETLANIE ---
 clear
 
+echo -e "${CYAN}${BOLD}"
+figlet -f small "I use Arch, BTW"
+echo -e "${RESET}"
+
 # 1. Rysujemy obrazek (Chafa lub Kitty icat)
 if [ -f "$IMAGE_PATH" ]; then
     # Jeśli używasz Kitty, możesz zmienić chafa na: kitten icat --align left "$IMAGE_PATH"
